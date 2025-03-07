@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travian Automation Bot</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1>Travian Automation Bot</h1>
+        
+        <!-- Building Automation Section -->
+        <section class="feature-section" id="buildingAutomation">
+            <h2>Building Automation</h2>
+            <label for="buildingPercentage">Resource Allocation for Buildings:</label>
+            <input type="range" id="buildingPercentage" min="0" max="100" value="50">
+            <span id="buildingPercentageLabel">50%</span>
+        </section>
+
+        <!-- Troop Production Section -->
+        <section class="feature-section" id="troopProduction">
+            <h2>Troop Production</h2>
+            <label for="troopPercentage">Resource Allocation for Troops:</label>
+            <input type="range" id="troopPercentage" min="0" max="100" value="50">
+            <span id="troopPercentageLabel">50%</span>
+        </section>
+
+        <!-- Online Time Control Section -->
+        <section class="feature-section" id="onlineTime">
+            <h2>Online Time Control</h2>
+            <label for="onlineStart">Start Time:</label>
+            <input type="time" id="onlineStart">
+            <label for="onlineEnd">End Time:</label>
+            <input type="time" id="onlineEnd">
+        </section>
+
+        <!-- Human-like Behavior Section -->
+        <section class="feature-section" id="humanBehavior">
+            <h2>Human-like Behavior</h2>
+            <label for="randomDelay">Enable Randomized Delays:</label>
+            <input type="checkbox" id="randomDelay">
+        </section>
+
+        <button id="saveSettings">Save Settings</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
